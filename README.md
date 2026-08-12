@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Funmsy Store
 
 A React storefront for Funmsy Store: splash screen, home/shop/product/about
@@ -126,3 +127,7 @@ src/
 supabase/
   schema.sql               # run once in Supabase's SQL editor
 ```
+=======
+# Fumsy_Store
+This is an ecommerce store for a clothing, shoe and accessories brand , this website is built to make view products, make orders, store in cart and access payment online 
+>>>>>>> 122824f952329e83ad157cda9c9470c4fbfd2159
