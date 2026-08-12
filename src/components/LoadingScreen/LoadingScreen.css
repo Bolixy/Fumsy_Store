@@ -1,0 +1,61 @@
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  background-image: radial-gradient(circle at 50% 30%, var(--paper) 0%, var(--cream) 70%);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.splash--leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  animation: splashRise 0.7s ease;
+}
+
+.splash__tagline {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.splash__bar {
+  margin-top: 18px;
+  width: 140px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--stone);
+  overflow: hidden;
+}
+
+.splash__bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--wine);
+  animation-name: splashFill;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes splashFill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes splashRise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

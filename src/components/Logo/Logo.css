@@ -1,0 +1,28 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo__mark {
+  flex-shrink: 0;
+}
+
+.logo--sm .logo__mark { width: 28px; height: 28px; }
+.logo--md .logo__mark { width: 38px; height: 38px; }
+.logo--lg .logo__mark { width: 64px; height: 64px; }
+
+.logo__word {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.logo--sm .logo__word { font-size: 18px; }
+.logo--md .logo__word { font-size: 22px; }
+.logo--lg .logo__word { font-size: 34px; }
+
+.logo__word-accent {
+  color: var(--wine);
+}
